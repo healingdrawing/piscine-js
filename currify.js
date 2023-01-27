@@ -1,0 +1,1 @@
+const currify = (fn) => (...args) => args.length >= fn.length ? fn.apply(null, args) : (...moreArgs) => currify(fn.bind(null, ...args))(...moreArgs);

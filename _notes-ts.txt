@@ -1,0 +1,13 @@
+to test , "node" is required.
+
+to download dependencies for fresh repository run:
+
+npm install
+
+to execute ts files in terminal run:
+
+./node_modules/.bin/tsc [script_name].ts && node [script_name].js
+
+if will first convert ts to js and then run js using node.
+
+not forget to convert all exports to es modules, using vscode quickfix
